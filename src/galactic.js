@@ -4,8 +4,8 @@ export class galacticYear{
   }
 
 ageInSeconds(){
-  let secondsInYear = (age * 31536000);
+  let secondsInYear = (this.age * 31536000);
   return secondsInYear;
 }
 
-}
+};
