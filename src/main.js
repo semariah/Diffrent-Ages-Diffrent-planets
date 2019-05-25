@@ -9,5 +9,5 @@ $('document').ready(function(){
     var result = output.ageInSeconds();
     $(".second-year").text(result);
     $("#test-output").show();
-  })
-})
+  });
+});
