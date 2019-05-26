@@ -1,7 +1,7 @@
 import { galacticYear } from './galactic.js';
 import './styles.css';
-import $ from 'jquery':
-import $ 'bootstrap':
+import $ from 'jquery';
+import 'bootstrap';
 
 $('document').ready(function(){
   $("#galactic-form").submit(function(event){
