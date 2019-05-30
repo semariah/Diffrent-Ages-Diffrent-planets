@@ -3,10 +3,10 @@ export class galacticYear{
     this.age = age;
   }
 
-  ageInSeconds(age){
-    let secondsInYear = (age * 31536000);
+  ageInSeconds(){
+    let secondsInYear = (this.age * 31536000);
     return secondsInYear;
   }
-  console.log("seconds in year found")
+
 
 }
