@@ -1,8 +1,8 @@
 export class galacticYear{
-  constructor(age){
+  constructor(age, day1, day2){
     this.age = age;
     this.day1 = new Date();
-    this.day2 = new Date();
+    this.day2 = new Date('February 29, 1993');
   }
 
   ageInSeconds(){
@@ -11,9 +11,10 @@ export class galacticYear{
   }
 
   diffrenceInSeconds(day1, day2){
-    let clock = this.day1.getTime();
-    let day = this.day2.getTime();
-    let difference = (day1 - day2)/(24*3600*1000);
+    let clock = new Date();
+    let day = new Date('February 29, 1993');
+    let difference = (clock - day)/(24*3600*1000);
+    alert(difference);
     // let secondDiffernce = Math.abs(diffrence);
     return difference;
   }
