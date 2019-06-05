@@ -11,6 +11,7 @@ $('document').ready(function(){
     let result = output.ageInSeconds();
     $(".second-year").text(result);
     $("#test-output").show();
+    $("#test2-output").hide();
   });
 });
 
@@ -21,7 +22,8 @@ $('document').ready(function(){
     let diffrenceResult2 = parseInt($("input#date2").val());
     let diffrentSeconds = new galacticYear(diffrenceResult1, diffrenceResult2);
     let secondDiffernce = diffrentSeconds.diffrenceInSeconds();
-    $(".second-year").text(secondDiffernce);
-    $("#test-output").show();
+    $(".second2-year").text(secondDiffernce);
+    $("#test2-output").show();
+    $("#test1-output").hide();
   });
 });
